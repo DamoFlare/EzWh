@@ -1,0 +1,48 @@
+{
+  "name": "prova",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "apiTest": "node_modules/.bin/mocha test --timeout 10000 --exit",
+    "apiTestt": "npx mocha --spec test/testResturnOrderRouter.js --timeout 3000 --coverage --runInBand --exit",
+    "test": "node_modules/.bin/jest --coverage --runInBand",
+    "testt": "npx jest --coverage --runInBand",
+    "acceptanceTest": "npx mocha --spec acceptanceTest/testEzWhAPI.js --reporter mochawesome --timeout 90000 --runInBand --exit",
+    "local": "npx mocha --spec acceptanceTest/crud/test-CRUD-RestockOrder.js --reporter mochawesome --timeout 5000 --exit",
+    "totalcoverage": "./node_modules/.bin/nyc ./node_modules/.bin/mocha test --timeout 10000 --exit"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-validator": "^6.14.0",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jest": "^27.5.1",
+    "mocha": "^10.0.0",
+    "morgan": "~1.9.1",
+    "nyc": "^15.1.0",
+    "sqlite3": "^5.0.8",
+    "barcoder": "^2.0.1",
+    "express-session": "^1.17.2",
+    "nodemon": "^2.0.16",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "check-code-coverage": "^1.10.0",
+    "mocha": "^9.2.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0",
+    "jest": "^27.5.1"
+  },
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

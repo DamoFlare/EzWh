@@ -1,0 +1,31 @@
+{
+  "name": "prova",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "apiTest": "./node_modules/.bin/mocha test --exit",
+    "apiTestt": "nyc node node_modules/mocha/bin/mocha test --exit",
+    "test": "node_modules/.bin/jest"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-validator": "^6.14.0",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jest": "^27.5.1",
+    "mocha": "^10.0.0",
+    "morgan": "~1.9.1",
+    "nyc": "^15.1.0",
+    "sqlite3": "^5.0.8"
+  },
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
